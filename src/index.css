@@ -40,8 +40,16 @@ img {
   background: #513282;
 }
 
-.main-heading {
-  padding: 25px 0;
+.home-heading  {
+  margin: 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+.sub-head{
+  margin: 1rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 .cartCount {
   font-weight: bold;

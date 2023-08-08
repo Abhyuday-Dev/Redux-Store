@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { GiHamburgerMenu, GiCrossedBones } from "react-icons/gi";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+
+  const items=useSelector(state=>state.cart);
   const [isActive, setIsActive] = useState(false);
 
   const navToggle = () => {
@@ -36,7 +39,7 @@ const Navbar = () => {
         </Link>
         <li className="nav__item">
             <a href="#" className="nav__link" onClick={handleClick}>
-              CartItems:0
+              CartItems:{items.length}
             </a>
           </li>
         

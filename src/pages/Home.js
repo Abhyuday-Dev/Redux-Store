@@ -1,4 +1,4 @@
-import {useEffect,useState} from 'react';
+
 import Products from '../components/Products/Products';
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
     <div>
         <h2 className='home-heading'>Welcome to Redux Store</h2>
         <section>
-            <h3>Products</h3>
+            <h3 className='sub-head'>Products</h3>
             <Products /> 
         </section>
     </div>
